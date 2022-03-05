@@ -19,7 +19,7 @@ jobs:
       uses: Joshua-Ashton/arch-mingw-github-action@v5
       with:
         command: |
-          export VERSION_NAME="2.5"
+          export VERSION_NAME="2.6"
           ./package-release.sh ${VERSION_NAME} build --no-package
           echo "VERSION_NAME=${VERSION_NAME}" >> $GITHUB_ENV
           mv build/vkd3d-proton-${VERSION_NAME} vkd3d-proton-${VERSION_NAME}
